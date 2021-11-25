@@ -30,12 +30,6 @@
 #navbar a:hover {
   color: white;
 }
-.nav-fadein {
-  opacity: 1;
-}
-.nav-fadeout {
-  opacity: 0;
-}
 
 @media screen and (max-width: 600px) {
   #navbar a span{
