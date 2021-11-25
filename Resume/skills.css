@@ -62,7 +62,7 @@
   color: #c8b8b8;
 }
 #skills-soft-item img{
-  height: 30vh;
+  height: 35vh;
 }
 #skills-language-container {
   display: grid;
@@ -79,7 +79,7 @@
   height: 100px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1350px) {
   #skills-soft-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -90,6 +90,8 @@
     margin: 0;
     justify-content: center;
   }
+}
+@media screen and (max-width: 1200px) {
   #skills-language-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -124,7 +126,5 @@
     grid-row-gap: 1rem;
     row-gap: 1rem;
     justify-items: center;
-    margin: auto;
-
   }
 }
