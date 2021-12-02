@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <script type="text/javascript" src="./lib/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="navbar.css">
@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="skills.css">
     <link rel="stylesheet" type="text/css" href="education.css">
     <link rel="stylesheet" type='text/css' href="contact.css">
+    <link rel="stylesheet" type='text/css' href="animations.css">
     <title>Lewis Hepple</title>
 
   </head>
@@ -26,6 +27,14 @@
       </div>
     </div>
     <div id='landing'>
+      <div id='ainmations'>
+        <div id='airplane'><img src='images/airplane.png' /></div>
+        <div id='clouds'>
+          <div id='cloud1'></div>
+          <div id='cloud2'></div>
+        </div>
+      </div>
+
       <div id='info-container'>
         <div id='name'>
         <span id='name1'>Lewis</span>
@@ -213,14 +222,19 @@
             Contact
           </div>
           <div id="contact-info">
-            <div id='email'>
-              Please contact me through email here: <a href='mailto:thelewishepple@gmail.com?subject=Please get in touch' target='blank'><img src='images/mail.png'/></a>
+            <div>
+              <p>Hey! Thanks for scrolling the whole way down!</p>
+              <p>You can reach out to contact me through email or through instagram here:</p>
             </div>
             <div id='links'>
+              <a href='mailto:thelewishepple@gmail.com?subject=Please get in touch' target='blank'><img src='images/mail.png'/></a>
+              <a href="https://www.instagram.com/lewis_hepple" target="_blank"><img src="images/insta-icon.png"></a>
+              <a href="Lewis Resume.pdf" target='_blank'><img src='images/CV.png'></a>
+              <a href='https://www.github.com/LordPenguin12' target='_blank'><img src='images/Github.png'></a>
             </div>
-            <div id='thanks'>
-            </div>
+
             <div id='photo'>
+              <img src="images/lewis-profile.jpg">
             </div>
           </div>
 
@@ -252,8 +266,21 @@
           }
         }
     });
+    const animated = document.querySelector('#popup-location img');
+      animated.onanimationstart = function() {
+        var imgCount = 10;
+        var images = ['snowboarding1.gif', 'wave.gif', 'climbing.gif', 'temple.gif', 'pyramids.gif', 'coral.gif', 'yoga.gif', 'mountain.gif', 'hiking.gif', 'newyork.gif'];
+        setTimeout(() => { const interval = setInterval( function(z) {
+          var randomCount = (Math.floor(Math.random() * imgCount));
+          document.getElementById('img').setAttribute("style", "background-image: url(images/" + images[randomCount] + ")");
+          }, 3000);
+        }, 1500);
+      };
 
-  });
+
+
+
+    });
 
     </script>
   </body>
