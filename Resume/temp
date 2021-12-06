@@ -1,28 +1,10 @@
-
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100vw" height="260px">
-  <line x1="0" y1="15" x2="100%" y2="15" stroke="#C6A1CF" stroke-width="5" stroke-opacity="0.0666" />
-  <line x1="0" y1="25" x2="100%" y2="25" stroke="#C6A1CF" stroke-width="5" stroke-opacity="0.1333" />
-  <line x1="0" y1="35" x2="100%" y2="35" stroke="#C6A1CF" stroke-width="5" stroke-opacity="0.2" />
-  <line x1="0" y1="45" x2="100%" y2="45" stroke="#C6A1CF" stroke-width="5" stroke-opacity="0.2666" />
-  <line x1="0" y1="55" x2="100%" y2="55" stroke="#C6A1CF" stroke-width="5" stroke-opacity="0.3333" />
-  <line x1="0" y1="65" x2="100%" y2="65" stroke="#C6A1CF" stroke-width="5" stroke-opacity="0.4" />
-  <line x1="0" y1="75" x2="100%" y2="75" stroke="#C6A1CF" stroke-width="5" stroke-opacity="0.4666" />
-  <line x1="0" y1="85" x2="100%" y2="85" stroke="#C6A1CF" stroke-width="5" stroke-opacity="0.5333" />
-  <line x1="0" y1="95" x2="100%" y2="95" stroke="#C6A1CF" stroke-width="5" stroke-opacity="0.6" />
-  <line x1="0" y1="105" x2="100%" y2="105" stroke="#C6A1CF" stroke-width="5" stroke-opacity="0.6333" />
-  <line x1="0" y1="115" x2="100%" y2="115" stroke="#C6A1CF" stroke-width="5" stroke-opacity="0.7" />
-  <line x1="0" y1="125" x2="100%" y2="125" stroke="#C6A1CF" stroke-width="5" stroke-opacity="0.7666" />
-  <line x1="0" y1="135" x2="100%" y2="135" stroke="#C6A1CF" stroke-width="5" stroke-opacity="0.8333" />
-  <line x1="0" y1="145" x2="100%" y2="145" stroke="#C6A1CF" stroke-width="5" stroke-opacity="0.9" />
-  <line x1="0" y1="155" x2="100%" y2="155" stroke="#C6A1CF" stroke-width="5" stroke-opacity="0.9666" />
-  <line x1="0" y1="165" x2="100%" y2="165" stroke="#C6A1CF" stroke-width="5" stroke-opacity="1" />
-  <line x1="0" y1="175" x2="100%" y2="175" stroke="#C6A1CF" stroke-width="5" stroke-opacity="0.9" />
-  <line x1="0" y1="185" x2="100%" y2="185" stroke="#C6A1CF" stroke-width="5" stroke-opacity="0.8" />
-  <line x1="0" y1="195" x2="100%" y2="195" stroke="#C6A1CF" stroke-width="5" stroke-opacity="0.7" />
-  <line x1="0" y1="205" x2="100%" y2="205" stroke="#C6A1CF" stroke-width="5" stroke-opacity="0.6" />
-  <line x1="0" y1="215" x2="100%" y2="215" stroke="#C6A1CF" stroke-width="5" stroke-opacity="0.5" />
-  <line x1="0" y1="225" x2="100%" y2="225" stroke="#C6A1CF" stroke-width="5" stroke-opacity="0.4" />
-  <line x1="0" y1="235" x2="100%" y2="235" stroke="#C6A1CF" stroke-width="5" stroke-opacity="0.3" />
-  <line x1="0" y1="245" x2="100%" y2="245" stroke="#C6A1CF" stroke-width="5" stroke-opacity="0.2" />
-  <line x1="0" y1="255" x2="100%" y2="255" stroke="#C6A1CF" stroke-width="5" stroke-opacity="0.1" />
-</svg>
+const animated = document.querySelector('#popup-location img');
+  animated.onanimationstart = function() {
+    var imgCount = 10;
+    var images = ['snowboarding1.gif', 'wave.gif', 'climbing.gif', 'temple.gif', 'pyramids.gif', 'coral.gif', 'yoga.gif', 'mountain.gif', 'hiking.gif', 'newyork.gif'];
+    setTimeout(() => { const interval = setInterval( function(z) {
+      var randomCount = (Math.floor(Math.random() * imgCount));
+      document.getElementById('img').setAttribute("style", "background-image: url(images/" + images[randomCount] + ")");
+      }, 3000);
+    }, 1500);
+  };

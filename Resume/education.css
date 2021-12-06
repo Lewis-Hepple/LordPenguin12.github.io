@@ -6,7 +6,7 @@
   color: #c8b8b8;
   font-size: 5rem;
 }
-#education-info {
+.education-info {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 2rem;
@@ -19,7 +19,7 @@
   justify-content: center;
   color: #c8b8b8;
 }
-#education-info img {
+.education-info img {
   margin: auto;
   width:25vw;
 }
@@ -43,7 +43,7 @@
 }
 
 @media screen and (max-width: 1050px) {
-  #education-info {
+  .education-info {
     display: grid;
     grid-template-columns: 1fr;
     grid-column-gap: 2rem;
@@ -55,7 +55,7 @@
     align-items: center;
     justify-content: center;
   }
-  #education-info img {
+  .education-info img {
     margin: auto;
     width:35vw;
   }
@@ -65,19 +65,7 @@
     font-size: 1rem;
     text-align: left;
   }
-  #education-infoCA {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
-    row-gap: 2rem;
-    margin-bottom: 2vh;
-    margin-left: 4vw;
-    margin-right: 5vw;
-    margin-top: 3vh;
-    align-items: center;
-    justify-content: center;
-  }
+
   .education-contentUQ {
     width: auto;
     grid-row: 2;
@@ -101,7 +89,7 @@
     color: #c8b8b8;
     font-size: 3.5rem;
   }
-  #education-info {
+  .education-info {
     display: grid;
     grid-template-columns: 1fr;
     grid-column-gap: 2rem;
@@ -113,7 +101,7 @@
     align-items: center;
     justify-content: center;
   }
-  #education-info img {
+  .education-info img {
     margin: auto;
     width:35vw;
     min-width: 300px;
@@ -124,19 +112,7 @@
     font-size: 0.8rem;
     text-align: center;
   }
-  #education-infoCA {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
-    row-gap: 2rem;
-    margin-bottom: 2vh;
-    margin-left: 4vw;
-    margin-right: 5vw;
-    margin-top: 3vh;
-    align-items: center;
-    justify-content: center;
-  }
+
   .education-contentUQ {
     width: auto;
     grid-row: 2;

@@ -5,3 +5,12 @@ body {
   display:block;
   font-family: 'Garamond';
 }
+
+canvas
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  background: #000000;
+}

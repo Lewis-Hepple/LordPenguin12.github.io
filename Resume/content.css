@@ -1,4 +1,4 @@
-#landing-break {
+.landing-break {
   border-top-left-radius: 100%;
   border-top-right-radius: 100%;
   overflow: hidden;
@@ -8,11 +8,4 @@
   text-align: center;
   padding: 2rem;
   margin: auto;
-}
-
-#education-break {
-  border-top-left-radius: 100%;
-  border-top-right-radius: 100%;
-  overflow: hidden;
-  margin-bottom: -60px;
 }
