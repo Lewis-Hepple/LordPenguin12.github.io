@@ -1,6 +1,6 @@
 body {
   background-image: linear-gradient(#000 1%, #1e0f1d 4.5% , #000 15%, #1b0d1a 50%, #000 85%, #1b0d1a 100%);
-
+  margin:0;
   color: #c8b8b8;
   display:block;
   font-family: 'Garamond';

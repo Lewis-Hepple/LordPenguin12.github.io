@@ -6,6 +6,33 @@
   color: #c8b8b8;
   font-size: 5rem;
 }
+#uq {
+  opacity:0;
+  transition: all 1.5s;
+}
+#uqinfo{
+  opacity:0;
+  transform: rotateX(-90deg);
+  transition: all 1.5s;
+}
+#cs50{
+  opacity:0;
+  transition: all 1.5s;
+}
+#cs50info{
+  opacity:0;
+  transition: all 1.5s;
+  transform: rotateX(-90deg);
+}
+#ca{
+  opacity:0;
+  transition: all 1.5s;
+}
+#cainfo{
+  opacity:0;
+  transition: all 1.5s;
+  transform: rotateX(-90deg);
+}
 .education-info {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -22,17 +49,23 @@
 .education-info img {
   margin: auto;
   width:25vw;
+  max-width: 60vw;
 }
 .education-contentUQ {
   width: auto;
   grid-column: 1 / 3;
   font-size: 1.1rem;
   text-align: left;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+
 }
 .uqimg {
   grid-row: 1;
   grid-column: 3;
   margin: auto;
+  max-width: 80vw;
+
 }
 
 .education-content {
@@ -40,6 +73,9 @@
   grid-column: 2 / 4;
   font-size: 1.1rem;
   text-align: left;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+
 }
 
 @media screen and (max-width: 1050px) {
@@ -58,6 +94,7 @@
   .education-info img {
     margin: auto;
     width:35vw;
+    max-width: 80vw;
   }
   .education-content {
     width: auto;
@@ -77,6 +114,7 @@
     margin: auto;
     grid-row: 1;
     grid-column: 1;
+      max-width: 80vw;
   }
 
 }
@@ -104,7 +142,7 @@
   .education-info img {
     margin: auto;
     width:35vw;
-    min-width: 300px;
+    min-width: 200px;
   }
   .education-content {
     width: auto;

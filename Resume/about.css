@@ -23,6 +23,8 @@
   border-radius: 50%;
   width: 17rem;
   height: 17rem;
+  max-width: 80vw;
+  max-height:80vw;
   overflow: hidden;
 }
 #about-icon img{

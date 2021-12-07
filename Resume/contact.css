@@ -7,6 +7,9 @@
   color: #c8b8b8;
   font-size: 5rem;
 }
+p a {
+  color: inherit;
+}
 
 #links {
   display: grid;
@@ -23,12 +26,14 @@
   max-width: 80%;
 }
 #photo {
-  margin-top:2%;
+  margin-top:8vh;
   margin-left: auto;
   margin-right:auto;
   border-radius: 50%;
   width: 20rem;
+  max-width: 80vw;
   height: 20rem;
+  max-height:80vw;
   overflow: hidden;
 }
 #photo img{
